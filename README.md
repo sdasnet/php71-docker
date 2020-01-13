@@ -20,7 +20,7 @@ Docker Hub Login
 ## Using Docker
 
 - Shell: `docker run -it php71-docker bash`
-- Server: `docker run -d -p 80:80 --name my-laravel-app -v "$PWD":/var/www php56-docker`
+- Server: `docker run -d -p 80:80 --name my-laravel-app -v "$PWD":/var/www php71-docker`
 
 ### Using Docker Compose
 
