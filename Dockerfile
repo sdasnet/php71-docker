@@ -19,11 +19,9 @@ RUN apt-get update \
         netcat \
         wget \
         sudo \
-    && docker-php-ext-install iconv mbstring mcrypt soap sockets zip \
+    && docker-php-ext-install iconv mbstring mysqli mcrypt soap sockets zip \
     && docker-php-ext-configure gd --enable-gd-native-ttf --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd \
-    && docker-php-ext-configure mysql --with-mysql=mysqlnd \
-    && docker-php-ext-install mysql \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-install bcmath
 
