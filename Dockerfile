@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.2-apache
 MAINTAINER James Wade <jpswade@gmail.com>
 
 # Install gd, iconv, mbstring, mcrypt, mysql, soap, sockets, zip, and zlib extensions
